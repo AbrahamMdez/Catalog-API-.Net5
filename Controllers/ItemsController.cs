@@ -85,7 +85,9 @@ namespace Catalog.Controllers
                 return NotFound();
             }
 
-            
+            repository.DeleteItem(id);
+
+            return NoContent();
         }
     }
 }
